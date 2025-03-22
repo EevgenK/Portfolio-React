@@ -1,11 +1,12 @@
 import { useState } from 'react';
-import s from './Layout.module.css';
 import Header from '../components/Header/Header';
 import BackGround from './BackGround/BackGround';
 import Modal from '../components/Modal/Modal';
 import Footer from '../components/Footer/Footer';
 
-const Layout = ({ children }) => {
+import { ReactNode } from 'react';
+
+const Layout = ({ children }: { children: ReactNode }) => {
   const [openModal, setOpenModal] = useState(false);
 
   return (

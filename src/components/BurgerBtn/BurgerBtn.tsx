@@ -1,7 +1,10 @@
 import { useState } from 'react';
 import s from './BurgerBtn.module.css';
 import { RxHamburgerMenu, RxBorderSolid } from 'react-icons/rx';
-const BurgerBtn = ({ modal }) => {
+type BurgerBtnProps = {
+  modal: () => void;
+};
+const BurgerBtn = ({ modal }: BurgerBtnProps) => {
   const [isHovered, setIsHovered] = useState(false);
   const handleClick = () => {
     modal();
