@@ -1,3 +1,5 @@
+import src9 from '../../../public/img/projects/pj-9-min.jpg';
+import srcset9 from '../../../public/img/projects/pj-9@2x-min.jpg';
 export const items = [
   {
     id: 9,
@@ -8,8 +10,8 @@ export const items = [
     git_link: 'https://github.com/anastasiiayerashova/final-project-frontend',
     description:
       'Water consumption tracker, that provides register users includes via Google. App that stores and analyses  daily and monthly water intake norm for users, based on their weight and daily active sport time.',
-    image_src: '../../../public/img/projects/pj-9-min.jpg',
-    image_srcset: '../../../public/img/projects/pj-9@2x-min.jpg',
+    image_src: src9,
+    image_srcset: srcset9,
   },
   {
     id: 8,
