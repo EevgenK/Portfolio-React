@@ -8,8 +8,8 @@ export const items = [
     git_link: 'https://github.com/anastasiiayerashova/final-project-frontend',
     description:
       'Water consumption tracker, that provides register users includes via Google. App that stores and analyses  daily and monthly water intake norm for users, based on their weight and daily active sport time.',
-    image_src: './public/img/projects/pj-9-min.jpg',
-    image_srcset: './public/img/projects/pj-9@2x-min.jpg',
+    image_src: '../../../public/img/projects/pj-9-min.jpg',
+    image_srcset: '../../../public/img/projects/pj-9@2x-min.jpg',
   },
   {
     id: 8,
@@ -20,8 +20,8 @@ export const items = [
     git_link: 'https://github.com/EevgenK/AquaTrack--bd',
     description:
       'Database for the Aquatrack app that allows to record users and store their daily and monthly water intake information. Allows registration and login via Google.',
-    image_src: './public/img/projects/pj-8-min.jpg',
-    image_srcset: './public/img/projects/pj-8@2x-min.jpg',
+    image_src: '../../../public/img/projects/pj-8-min.jpg',
+    image_srcset: '../../../public/img/projects/pj-8@2x-min.jpg',
   },
   {
     id: 7,
@@ -31,8 +31,8 @@ export const items = [
     git_link: 'https://github.com/EevgenK/STP-7982',
     description:
       'A responsive landing page for the Trail Boss BMX game. Includes cookie acceptance and active link to Play Market.',
-    image_src: './public/img/projects/pj-7-min.jpg',
-    image_srcset: './public/img/projects/pj-7@2x-min.jpg',
+    image_src: '../../../public/img/projects/pj-7-min.jpg',
+    image_srcset: '../../../public/img/projects/pj-7@2x-min.jpg',
   },
   {
     id: 6,
@@ -43,8 +43,8 @@ export const items = [
     git_link: 'https://github.com/EevgenK/nodejs-hw-mongodb/tree/main',
     description:
       'Database for contacts organizer application that allows to store, edit contacts including changing photo. Works with JWT and includes registration and login through Google.',
-    image_src: './public/img/projects/pj-6-min.jpg',
-    image_srcset: './public/img/projects/pj-6@2x-min.jpg',
+    image_src: '../../../public/img/projects/pj-6-min.jpg',
+    image_srcset: '../../../public/img/projects/pj-6@2x-min.jpg',
   },
   {
     id: 5,
@@ -55,8 +55,8 @@ export const items = [
     git_link: 'https://github.com/EevgenK/Organizer',
     description:
       'Responsive App that allows to organize contacts, edit, search and filter them. It works for registered users only.',
-    image_src: './public/img/projects/pj-5-min.jpg',
-    image_srcset: './public/img/projects/pj-5@2x-min.jpg',
+    image_src: '../../../public/img/projects/pj-5-min.jpg',
+    image_srcset: '../../../public/img/projects/pj-5@2x-min.jpg',
   },
   {
     id: 4,
@@ -67,8 +67,8 @@ export const items = [
     git_link: 'https://github.com/EevgenK/Movies-overview',
     description:
       'Responsive website, which allows to get information about any movie, watch trailers   and easily find trend movies. Works on Ukrainian as well as on English.',
-    image_src: './public/img/projects/pj-4-min.jpg',
-    image_srcset: './public/img/projects/pj-4@2x-min.jpg',
+    image_src: '../../../public/img/projects/pj-4-min.jpg',
+    image_srcset: '../../../public/img/projects/pj-4@2x-min.jpg',
   },
   {
     id: 3,
@@ -78,8 +78,8 @@ export const items = [
     git_link: '',
     description:
       'Demo responsive sushi-bar website, where you can make an table order, find out the location, menu, prices and etc.',
-    image_src: './public/img/projects/pj-3-min.jpg',
-    image_srcset: './public/img/projects/pj-3@2x-min.jpg',
+    image_src: '../../../public/img/projects/pj-3-min.jpg',
+    image_srcset: '../../../public/img/projects/pj-3@2x-min.jpg',
   },
   {
     id: 2,
@@ -89,8 +89,8 @@ export const items = [
     git_link: 'https://github.com/annabramarova/x10-project-htmlcss',
     description:
       'Responsive website that allows you to find out about 3D modelling and printing, and to place an order for this service.',
-    image_src: './public/img/projects/pj-2-min.jpg',
-    image_srcset: './public/img/projects/pj-2@2x-min.jpg',
+    image_src: '../../../public/img/projects/pj-2-min.jpg',
+    image_srcset: '../../../public/img/projects/pj-2@2x-min.jpg',
   },
 
   {
@@ -101,7 +101,7 @@ export const items = [
     git_link: 'https://github.com/EevgenK/goit-markup-hw-08',
     description:
       'Responsive website presenting the team, projects and services of the web studio.',
-    image_src: './public/img/projects/pj-1-min.jpg',
-    image_srcset: './public/img/projects/pj-1@2x-min.jpg',
+    image_src: '../../../public/img/projects/pj-1-min.jpg',
+    image_srcset: '../../../public/img/projects/pj-1@2x-min.jpg',
   },
 ];
