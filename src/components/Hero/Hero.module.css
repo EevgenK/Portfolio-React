@@ -1,0 +1,14 @@
+.hero {
+  background-image: linear-gradient(to right, #7777afcc, #206bce8e),
+    url(../../../public/img/hero_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 650px;
+}
+.title {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-style: normal;
+  color: var(--grey);
+}

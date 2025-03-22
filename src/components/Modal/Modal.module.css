@@ -1,0 +1,67 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1200;
+}
+.modal {
+  width: calc(70vw - 48px);
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 2px solid var(--main-color);
+  border-radius: 8px;
+  padding: 8px;
+  background: linear-gradient(0deg, transparent, var(--shadow), transparent);
+  backdrop-filter: blur(10px);
+}
+.btn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  right: 10px;
+  border: 1px solid var(--grey);
+  color: var(--grey);
+  background: var(--main-color);
+  padding: 6px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 14px;
+  overflow: hidden;
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px var(--shadow);
+  }
+  &:hover::before,
+  &:focus::before {
+    opacity: 1;
+    transform: rotate(-45deg) translateY(100%);
+  }
+}
+.btn::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    0deg,
+    transparent,
+    transparent 30%,
+    var(--shadow)
+  );
+  transform: rotate(5deg);
+  transition: all 0.5s ease;
+  opacity: 0;
+}
