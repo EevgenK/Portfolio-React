@@ -29,7 +29,7 @@ const Modal = ({ modalClose }: ModalProps) => {
         <button className={s.btn} onClick={modalClose}>
           X
         </button>
-        <NavBar modal={'modal'} />
+        <NavBar close={modalClose} modal={'modal'} />
       </div>
     </div>,
     modalRoot,

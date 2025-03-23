@@ -4,15 +4,16 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.7);
+
+  background-color: rgba(0, 0, 0, 0.2);
   z-index: 1200;
 }
 .modal {
-  width: calc(70vw - 48px);
-  height: 300px;
+  position: absolute;
+  top: 0;
+  right: 2%;
+  width: 200px;
+  height: 250px;
   display: flex;
   align-items: center;
   justify-content: center;

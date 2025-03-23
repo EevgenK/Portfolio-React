@@ -1,0 +1,43 @@
+.skills {
+  display: flex;
+  color: var(--grey);
+  margin-bottom: 10px;
+}
+.item {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, #7777afcc, #206bce8e);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  @media screen and (min-width: 768px) {
+    width: 100px;
+    height: 100px;
+    gap: 8px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 150px;
+    height: 150px;
+    gap: 8px;
+  }
+}
+.img {
+  width: 40px;
+  @media screen and (min-width: 768px) {
+    width: 55px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 80px;
+  }
+}
+.title {
+  font-size: 12px;
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
+}

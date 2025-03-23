@@ -2,7 +2,7 @@ import { FC } from 'react';
 import s from './SectionTitle.module.css';
 interface SectionTitleProps {
   text: string;
-  id: string;
+  id?: string;
 }
 
 const SectionTitle: FC<SectionTitleProps> = ({ text, id }) => {

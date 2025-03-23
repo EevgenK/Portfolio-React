@@ -1,6 +1,21 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  min-width: 100%;
   display: flex;
+  justify-content: space-around;
   gap: 12px;
   align-items: center;
   background: linear-gradient(to bottom, var(--main-color), var(--main-hover));
+
+  transition: background var(--transition), transform var(--transition);
+}
+.header_fixed {
+  background: var(--transplanted-bg);
+  transform: translateY(-100%);
+}
+.header_fixed_visible {
+  transform: translateY(0); /* З'являється плавно */
 }

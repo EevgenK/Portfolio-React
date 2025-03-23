@@ -16,7 +16,17 @@ import src2 from '../../../public/img/projects/pj-2-min.jpg';
 import srcset2 from '../../../public/img/projects/pj-2@2x-min.jpg';
 import src1 from '../../../public/img/projects/pj-1-min.jpg';
 import srcset1 from '../../../public/img/projects/pj-1@2x-min.jpg';
-export const items = [
+export interface myProject {
+  id: number;
+  title: string;
+  stacks: string;
+  deploy_link: string;
+  git_link: string;
+  description: string;
+  image_src: string;
+  image_srcset: string;
+}
+export const myProjects: myProject[] = [
   {
     id: 9,
     title: 'Aquatrack App',

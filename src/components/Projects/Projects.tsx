@@ -1,6 +1,6 @@
 import Container from '../../layout/Container/Container';
 
-import { items } from './items';
+import { myProjects } from './myProjects';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
@@ -45,7 +45,7 @@ const Projects = () => {
           modules={[EffectCoverflow, Pagination, Navigation]}
           className="mySwiper"
         >
-          {items.map((item) => (
+          {myProjects.map((item) => (
             <SwiperSlide key={item.id} tag="li" className={s.card}>
               <picture>
                 <source
@@ -77,7 +77,7 @@ const Projects = () => {
                 </a>
                 <a href={item.git_link} target="blank">
                   vist{' '}
-                  <img src="/icons/Common/github.svg" alt="GitHub" width={12} />
+                  <img src="/icons/front/github.svg" alt="GitHub" width={12} />
                 </a>
               </div>
             </SwiperSlide>

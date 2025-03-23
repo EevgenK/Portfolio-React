@@ -1,0 +1,25 @@
+.skills {
+  margin: 0 auto 10px;
+  width: 95%;
+  border: 2px solid #206bce8e;
+  padding: 10px 30px 20px;
+  background: linear-gradient(to bottom, #7777afcc, #206bce8e);
+  color: var(--grey);
+  list-style: disc;
+  column-count: 2;
+  column-gap: 20px;
+  font-size: 12px;
+  line-height: 1.5rem;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    column-count: 3;
+  }
+  @media screen and (min-width: 1440px) {
+    column-count: 4;
+    font-size: 16px;
+  }
+}
+.skill {
+  text-transform: capitalize;
+}
