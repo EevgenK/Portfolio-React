@@ -22,7 +22,7 @@ const Projects = () => {
           effect={'coverflow'}
           grabCursor={true}
           centeredSlides={true}
-          slidesPerView={3}
+          slidesPerView={1}
           loop={true}
           coverflowEffect={{
             rotate: 50,
@@ -31,6 +31,11 @@ const Projects = () => {
             modifier: 1,
             scale: 0.9,
             slideShadows: true,
+          }}
+          breakpoints={{
+            768: {
+              slidesPerView: 3,
+            },
           }}
           pagination={true}
           navigation={{
