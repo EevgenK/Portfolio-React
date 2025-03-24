@@ -1,7 +1,0 @@
-{
-  "rewrites": [
-    { "source": "/icons/front/(.*)", "destination": "/icons/front/$1" },
-    { "source": "/icons/back/(.*)", "destination": "/icons/back/$1" },
-    { "source": "/(.*)", "destination": "/" }
-  ]
-}
