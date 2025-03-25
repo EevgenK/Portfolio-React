@@ -1,7 +1,7 @@
 export const uk = {
   translation: {
     about: {
-      main_title: 'Трекер споживання води',
+      main_title: 'Я можу втілити ваші ідеї в реальність!',
 
       second_title: 'Про мене',
       first_p:
@@ -12,6 +12,15 @@ export const uk = {
 
       third_p:
         'Більше про мене: відповідальний, уважний, орієнтований на результат командний гравець з почуттям гумору.',
+    },
+    navigation: {
+      about: 'про мене',
+      skills: 'навички',
+      projects: 'проекти',
+      contacts: 'контакти',
+    },
+    soft_skills: {
+      title: 'Соціально-комунікативні навички',
     },
   },
 };

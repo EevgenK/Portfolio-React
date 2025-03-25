@@ -20,12 +20,12 @@
   font-family: 'Oswald';
   src: url('./fonts/Oswald-VariableFont_wght.ttf');
   font-optical-sizing: auto;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 :root {
-  --font-accent: 'Big Shoulders Stencil', sans-serif;
-  --font-second: 'Oswald', sans-serif;
+  --font-accent: 'Big Shoulders Stencil', 'Oswald', sans-serif;
+
   --main-color: #2f2f2f;
   --main-hover: #323f47;
   --second-color: #21059b;

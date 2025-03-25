@@ -12,5 +12,14 @@ export const en = {
       third_p:
         'More about me: responsible, attentive, result-oriented team player with a sense of humour.',
     },
+    navigation: {
+      about: 'about me',
+      skills: 'skills',
+      projects: 'projects',
+      contacts: 'contacts',
+    },
+    soft_skills: {
+      title: 'soft skills',
+    },
   },
 };

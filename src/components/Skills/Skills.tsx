@@ -4,12 +4,14 @@ import SectionTitle from '../SectionTitle/SectionTitle';
 import SoftSkillsList from '../SoftSkillsList/SoftSkillsList';
 import TechSkillsList from '../TechSkillsList/TechSkillsList';
 import s from './Skills.module.css';
+import { useTranslation } from 'react-i18next';
 import Marquee from 'react-fast-marquee';
 const Skills = () => {
+  const { t } = useTranslation();
   return (
     <section>
       <Container additionalClass={s.skills}>
-        <SectionTitle text="Soft Skills" id="soft skills" />
+        <SectionTitle text={t('soft_skills.title')} id="soft skills" />
         <SoftSkillsList />
         <SectionTitle text="Tech Skills" id="tech skills" />
         <Marquee speed={50} pauseOnHover direction="right">

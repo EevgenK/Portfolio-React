@@ -8,7 +8,7 @@ const About = () => {
   return (
     <>
       <SectionTitle text={t('about.second_title')} />
-      <SectionTitle text="ПРО МЕНЕ" />
+
       <p className={s.description}>
         <img
           className={s.photo}

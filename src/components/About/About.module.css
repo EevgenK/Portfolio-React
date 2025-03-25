@@ -6,6 +6,11 @@
   text-align: justify;
   @media screen and (min-width: 768px) {
     font-size: 16px;
+    line-height: 1.3rem;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 18px;
+    line-height: 1.5rem;
   }
 }
 .photo {
@@ -17,5 +22,8 @@
   box-shadow: 8px 11px 26px -9px rgba(0, 0, 0, 0.5);
   @media screen and (min-width: 768px) {
     width: 200px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 250px;
   }
 }
