@@ -9,8 +9,12 @@
   }
 }
 .photo {
+  border: 2px solid var(--shadow);
+  border-radius: 8px;
   float: right;
   margin-left: 10px;
+  background: linear-gradient(to bottom, var(--main-color), var(--main-hover));
+  box-shadow: 8px 11px 26px -9px rgba(0, 0, 0, 0.5);
   @media screen and (min-width: 768px) {
     width: 200px;
   }

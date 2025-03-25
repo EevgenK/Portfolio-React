@@ -1,11 +1,14 @@
 import SectionTitle from '../SectionTitle/SectionTitle';
 import s from './About.module.css';
-import photo from '../../assets/some_img.webp';
+import photo from '../../assets/about.png';
+import { useTranslation } from 'react-i18next';
 
 const About = () => {
+  const { t } = useTranslation();
   return (
     <>
-      <SectionTitle text="about me" />
+      <SectionTitle text={t('about.second_title')} />
+      <SectionTitle text="ПРО МЕНЕ" />
       <p className={s.description}>
         <img
           className={s.photo}
@@ -13,18 +16,10 @@ const About = () => {
           alt="developer photo"
           width={120}
         />
-        I am an ambitious and passionate fullstack developer from Ukraine, who
-        wants to make the world more comfortable and much better!
+        {t('about.first_p')}
       </p>
-      <p className={s.description}>
-        My goal is to help businesses and to make customers feel safe and
-        satisfied while using the product.
-      </p>
-      <p className={s.description}>
-        {' '}
-        More about me: responsible, attentive, result-oriented team player with
-        a sense of humour.
-      </p>
+      <p className={s.description}>{t('about.second_p')}</p>
+      <p className={s.description}>{t('about.third_p')}</p>
     </>
   );
 };

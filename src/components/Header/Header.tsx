@@ -6,6 +6,7 @@ import NavBar from '../NavBar/NavBar';
 import s from './Header.module.css';
 import clsx from 'clsx';
 import { useEffect, useState } from 'react';
+import LanguageButtons from '../LanguageButtons/LanguageButtons';
 type HeaderProps = {
   modalOpen: () => void;
 };
@@ -29,6 +30,7 @@ const Header = ({ modalOpen }: HeaderProps) => {
         )}
       >
         <Logo />
+        <LanguageButtons />
         <BurgerBtn modal={modalOpen} />
         <NavBar />
       </Container>
