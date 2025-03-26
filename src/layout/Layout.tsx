@@ -12,7 +12,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
   return (
     <>
       <Header modalOpen={() => setOpenModal(true)} />
-      <main>{children}</main> <footer></footer>
+      <main>{children}</main>
       {openModal && <Modal modalClose={() => setOpenModal(false)} />}
       <Footer />
       <BackGround />

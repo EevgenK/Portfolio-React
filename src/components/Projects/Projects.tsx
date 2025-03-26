@@ -9,12 +9,14 @@ import 'swiper/css/navigation';
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 import s from './Projects.module.css';
 import SectionTitle from '../SectionTitle/SectionTitle';
+import { useTranslation } from 'react-i18next';
 
 const Projects = () => {
+  const { t } = useTranslation();
   return (
     <section>
       <Container additionalClass={s.projects}>
-        <SectionTitle id="projects" text="My Projects" />
+        <SectionTitle id="projects" text={t('projects.title')} />
         <button className="btn_prev">{'<'}</button>
         <button className="btn_next">{'>'}</button>
         <Swiper
@@ -43,7 +45,7 @@ const Projects = () => {
             prevEl: `.btn_prev`,
           }}
           modules={[EffectCoverflow, Pagination, Navigation]}
-          className="mySwiper"
+          className={s.swiper_pro}
         >
           {myProjects.map((item) => (
             <SwiperSlide key={item.id} tag="li" className={s.card}>
@@ -60,12 +62,15 @@ const Projects = () => {
                 />
               </picture>
 
-              <h3 className={s.card_title}>{item.title}</h3>
+              <h3 className={s.card_title}>
+                {t(`projects.${item.title}.title`)}
+              </h3>
               <p className={s.description}>
-                <span>Description:</span> {item.description}
+                <span>{t('projects.description')}:</span>{' '}
+                {t(`projects.${item.title}.description`)}
               </p>
               <p className={s.stacks}>
-                <span>Used Stack:</span> {item.stacks}
+                <span>{t('projects.stack')}:</span> {item.stacks}
               </p>
               <div className={s.links_wrap}>
                 <a
@@ -73,11 +78,11 @@ const Projects = () => {
                   href={item.deploy_link}
                   target="blank"
                 >
-                  view
+                  {t('projects.view')}
                 </a>
                 <a href={item.git_link} target="blank">
-                  vist{' '}
-                  <img src="/icons/front/github.svg" alt="GitHub" width={12} />
+                  {t('projects.visit')}
+                  <img src="/icons/github.svg" alt="GitHub" width={12} />
                 </a>
               </div>
             </SwiperSlide>

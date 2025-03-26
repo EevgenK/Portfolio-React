@@ -1,6 +1,14 @@
 .title {
   color: var(--grey);
   margin-bottom: 6px;
+
   text-align: center;
   text-transform: uppercase;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 12px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 20px;
+    font-size: 46px;
+  }
 }

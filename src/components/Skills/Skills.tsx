@@ -11,9 +11,9 @@ const Skills = () => {
   return (
     <section>
       <Container additionalClass={s.skills}>
-        <SectionTitle text={t('soft_skills.title')} id="soft skills" />
+        <SectionTitle text={t('skills.soft_title')} id="soft skills" />
         <SoftSkillsList />
-        <SectionTitle text="Tech Skills" id="tech skills" />
+        <SectionTitle text={t('skills.tech_title')} id="tech skills" />
         <Marquee speed={50} pauseOnHover direction="right">
           <TechSkillsList items={frontSkills} />
         </Marquee>

@@ -16,67 +16,62 @@ import src2 from '../../../public/img/projects/pj-2-min.jpg';
 import srcset2 from '../../../public/img/projects/pj-2@2x-min.jpg';
 import src1 from '../../../public/img/projects/pj-1-min.jpg';
 import srcset1 from '../../../public/img/projects/pj-1@2x-min.jpg';
+
 export interface myProject {
   id: number;
   title: string;
   stacks: string;
   deploy_link: string;
   git_link: string;
-  description: string;
+
   image_src: string;
   image_srcset: string;
 }
 export const myProjects: myProject[] = [
   {
     id: 9,
-    title: 'Aquatrack App',
+    title: 'aquatrack',
     stacks:
-      'Html, СSS, React, JavaScript, Redux, JSON Web Token (JWT), i18next, React Tour, Axios, Rest Api.',
+      'Html, СSS, JavaScript, Redux, JSON Web Token (JWT), i18next, React Tour, Axios, Rest Api.',
     deploy_link: 'https://final-project-frontend-taupe.vercel.app/',
     git_link: 'https://github.com/anastasiiayerashova/final-project-frontend',
-    description:
-      'Water consumption tracker, that provides register users includes via Google. App that stores and analyses  daily and monthly water intake norm for users, based on their weight and daily active sport time.',
-    image_src: src9,
-    image_srcset: srcset9,
+    image_src: 'img/pj-9-min.jpg',
+    image_srcset: 'img/pj-9@2x-min.jpg',
   },
   {
     id: 8,
-    title: 'Database for Aquatrack App',
+    title: 'aquatrackDataBase',
     stacks:
       'Node.js, Express, Mongo DB, Mongoose, By Crypt, JWT, Cloudinary, Multer, Joi, Google Auth, Swagger.',
     deploy_link: 'https://aquatrack-bd.onrender.com/api-docs/',
     git_link: 'https://github.com/EevgenK/AquaTrack--bd',
-    description:
-      'Database for the Aquatrack app that allows to record users and store their daily and monthly water intake information. Allows registration and login via Google.',
+
     image_src: src8,
     image_srcset: srcset8,
   },
   {
     id: 7,
-    title: 'Trail Boss BMX',
+    title: 'trailBossBMX',
     stacks: 'Html, JavaScript, SASS, Git, Swiper, Vite.',
     deploy_link: 'https://eevgenk.github.io/STP-7982/',
     git_link: 'https://github.com/EevgenK/STP-7982',
-    description:
-      'A responsive landing page for the Trail Boss BMX game. Includes cookie acceptance and active link to Play Market.',
+
     image_src: src7,
     image_srcset: srcset7,
   },
   {
     id: 6,
-    title: 'Phone book database',
+    title: 'phoneBookDataBase',
     stacks:
       'Node.js, Express, Mongo DB, Mongoose, By Crypt, JWT, Cloudinary, Multer, Joi, Google Auth, Swagger.',
     deploy_link: 'https://contacts-app-51y8.onrender.com/api-docs/',
     git_link: 'https://github.com/EevgenK/nodejs-hw-mongodb/tree/main',
-    description:
-      'Database for contacts organizer application that allows to store, edit contacts including changing photo. Works with JWT and includes registration and login through Google.',
     image_src: src6,
     image_srcset: srcset6,
   },
   {
     id: 5,
-    title: 'Phone book organizer',
+    title: 'phoneBookOrganizer',
     stacks:
       'Html, СSS, JavaScript, React, Redux, JSON Web Token (JWT), Material UI, Formik, Yup.',
     deploy_link: 'https://organizer-black.vercel.app/',
@@ -88,46 +83,51 @@ export const myProjects: myProject[] = [
   },
   {
     id: 4,
-    title: 'Movies overviews',
+    title: 'moviesOverviews',
     stacks:
       'React, JavaScript, CSS, Git/Vercel, Vite, React Router Dom, Axios, Rest API.',
     deploy_link: 'https://movies-overview-woad.vercel.app/',
     git_link: 'https://github.com/EevgenK/Movies-overview',
-    description:
-      'Responsive website, which allows to get information about any movie, watch trailers   and easily find trend movies. Works on Ukrainian as well as on English.',
     image_src: src4,
     image_srcset: srcset4,
   },
   {
+    id: 10,
+    title: 'portfolioLoyd',
+    stacks: 'Html, СSS, JavaScript, Vite, Axios, Accordion, Rest Api, Swiper.',
+    deploy_link: 'https://evhenii18.github.io/Our-group-js-project/',
+    git_link: 'https://github.com/Evhenii18/Our-group-js-project',
+
+    image_src: '/img/pj-10-min.webp',
+    image_srcset: '/img/pj-10@2x-min.webp',
+  },
+  {
     id: 3,
-    title: 'Qitchen Sushi-bar web site',
+    title: 'qitchen',
     stacks: 'React, JavaScript, CSS, Git/Vercel, Vite, React Router Dom.',
     deploy_link: 'https://sushi-bar-eta.vercel.app/',
-    git_link: '',
-    description:
-      'Demo responsive sushi-bar website, where you can make an table order, find out the location, menu, prices and etc.',
+    git_link: 'https://github.com/EevgenK/sushi_bar',
+
     image_src: src3,
     image_srcset: srcset3,
   },
   {
     id: 2,
-    title: '3D modeling and printing',
+    title: 'modelingPrinting',
     stacks: 'Html, JavaScript, SASS, Git, Parcel.',
     deploy_link: 'https://eevgenk.github.io/team-project-10g/',
     git_link: 'https://github.com/annabramarova/x10-project-htmlcss',
-    description:
-      'Responsive website that allows you to find out about 3D modelling and printing, and to place an order for this service.',
+
     image_src: src2,
     image_srcset: srcset2,
   },
   {
     id: 1,
-    title: 'web studio',
+    title: 'webStudio',
     stacks: 'Html, JavaScript, SASS, Git, Parcel, BAM.',
     deploy_link: 'https://eevgenk.github.io/goit-markup-hw-08/',
     git_link: 'https://github.com/EevgenK/goit-markup-hw-08',
-    description:
-      'Responsive website presenting the team, projects and services of the web studio.',
+
     image_src: src1,
     image_srcset: srcset1,
   },
