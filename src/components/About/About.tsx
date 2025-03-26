@@ -1,6 +1,8 @@
 import SectionTitle from '../SectionTitle/SectionTitle';
 import s from './About.module.css';
 import photo from '../../assets/about.png';
+import photoW from '../../assets/about_w.webp';
+
 import { useTranslation } from 'react-i18next';
 
 const About = () => {
@@ -10,12 +12,15 @@ const About = () => {
       <SectionTitle text={t('about.second_title')} />
 
       <p className={s.description}>
-        <img
-          className={s.photo}
-          src={photo}
-          alt="developer photo"
-          width={120}
-        />
+        <picture>
+          <source srcSet={photoW} type="image/webp" />
+          <img
+            className={s.photo}
+            src={photo}
+            alt="developer photo"
+            width={120}
+          />
+        </picture>
         {t('about.first_p')}
       </p>
       <p className={s.description}>{t('about.second_p')}</p>
