@@ -25,6 +25,14 @@ const About = () => {
       </p>
       <p className={s.description}>{t('about.second_p')}</p>
       <p className={s.description}>{t('about.third_p')}</p>
+      <div className={s.git_wrap}>
+        <h4>{t('about.git_activity')}:</h4>
+        <img
+          className={s.git}
+          src="https://ghchart.rshah.org/EevgenK"
+          alt="GitHub activity"
+        />
+      </div>
     </>
   );
 };

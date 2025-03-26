@@ -11,6 +11,7 @@ export const en = {
 
       third_p:
         'More about me: responsible, attentive, result-oriented team player with a sense of humour.',
+      git_activity: 'GitHub activity',
     },
     navigation: {
       about: 'about me',
