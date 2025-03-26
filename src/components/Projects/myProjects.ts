@@ -76,8 +76,6 @@ export const myProjects: myProject[] = [
       'Html, СSS, JavaScript, React, Redux, JSON Web Token (JWT), Material UI, Formik, Yup.',
     deploy_link: 'https://organizer-black.vercel.app/',
     git_link: 'https://github.com/EevgenK/Organizer',
-    description:
-      'Responsive App that allows to organize contacts, edit, search and filter them. It works for registered users only.',
     image_src: src5,
     image_srcset: srcset5,
   },
