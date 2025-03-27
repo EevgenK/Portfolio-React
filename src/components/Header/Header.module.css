@@ -5,7 +5,7 @@
   z-index: 2;
   min-width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   gap: 12px;
   align-items: center;
   background: linear-gradient(to bottom, var(--main-color), var(--main-hover));

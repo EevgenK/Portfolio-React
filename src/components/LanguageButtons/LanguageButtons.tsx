@@ -3,6 +3,7 @@ import i18next from 'i18next';
 import s from './LanguageButtons.module.css';
 import { LOCALS, LocalValueType } from '../../i18n/constants';
 import clsx from 'clsx';
+import LighterButton from '../../blocks/LighterButton/LighterButton';
 
 const LanguageButtons = () => {
   const [currentLang, setCurrentLang] = useState(i18next.language);
@@ -25,18 +26,16 @@ const LanguageButtons = () => {
 
   return (
     <div className={s.language_buttons_wrapper}>
-      <button
-        className={clsx(currentLang === LOCALS.UK ? [s.btn, s.active] : s.btn)}
-        onClick={() => onHandleChange(LOCALS.UK)}
-      >
-        UA
-      </button>
-      <button
-        className={clsx(currentLang === LOCALS.EN ? [s.btn, s.active] : s.btn)}
-        onClick={() => onHandleChange(LOCALS.EN)}
-      >
-        EN
-      </button>
+      <LighterButton
+        text="UA"
+        active={currentLang === LOCALS.UK}
+        click={() => onHandleChange(LOCALS.UK)}
+      />
+      <LighterButton
+        text="EN"
+        active={currentLang === LOCALS.EN}
+        click={() => onHandleChange(LOCALS.EN)}
+      />
     </div>
   );
 };

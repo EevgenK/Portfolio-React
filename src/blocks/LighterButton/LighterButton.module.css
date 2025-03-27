@@ -1,0 +1,86 @@
+.light_button button.bt {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: flex-end;
+  outline: none;
+  background: none;
+  border: none;
+}
+
+.light_button button.bt .button_holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  width: 100%;
+  padding: 2px 4px;
+  color: var(--main-hover);
+  background-color: var(--main-color);
+  border-radius: 5px;
+  font-weight: 700;
+  transition: 300ms;
+  outline: var(--main-color) 2px solid;
+  outline-offset: 20;
+}
+
+.light_button button.bt .button_holder .icon {
+  height: 16px;
+  width: 16px;
+  transition: 200ms;
+  opacity: 0.4;
+}
+
+.light_button button.bt .light_holder {
+  position: absolute;
+  height: 56px;
+  width: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.light_button button.bt .light_holder .dot {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 6px;
+  height: 6px;
+  background: transparent;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.light_button button.bt .light_holder .light {
+  position: absolute;
+  top: 0;
+  height: 60px;
+  width: 80px;
+  clip-path: polygon(50% 0%, 25% 100%, 75% 100%);
+  background: transparent;
+}
+.light_button button.bt:is(:hover, :focus, .active) .light_holder .dot {
+  background: var(--grey);
+}
+
+.light_button button.bt:is(:hover, :focus, .active) .button_holder .icon {
+  opacity: 1;
+}
+.light_button button.bt:is(:hover, :focus, .active) .button_holder {
+  color: var(--grey);
+  outline: var(--grey) 2px solid;
+  outline-offset: 2px;
+}
+
+.light_button button.bt:is(:hover, :focus, .active) .light_holder .light {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    var(--grey) 0%,
+    rgba(255, 255, 255, 0) 75%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}

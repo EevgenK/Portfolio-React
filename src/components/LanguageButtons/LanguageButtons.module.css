@@ -1,23 +1,5 @@
 .language_buttons_wrapper {
   display: flex;
-  gap: 5px;
+  gap: 10px;
   max-width: 60px;
-}
-
-.btn {
-  background-color: transparent;
-  font-size: 14px;
-  line-height: 1.5;
-  padding: 2px 4px;
-  color: var(--grey);
-}
-.active {
-  border: 1px solid var(--grey);
-  border-radius: 8px;
-}
-
-@media screen and (min-width: 768px) {
-  .btn {
-    font-size: 16px;
-  }
 }

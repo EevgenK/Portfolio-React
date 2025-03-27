@@ -25,7 +25,7 @@
 
 :root {
   --font-accent: 'Big Shoulders Stencil', 'Oswald', sans-serif;
-
+  --color2: orange;
   --main-color: #2f2f2f;
   --main-hover: #323f47;
   --second-color: #21059b;
