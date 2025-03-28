@@ -1,0 +1,173 @@
+svg {
+  width: 25px;
+  height: 25px;
+  @media screen and (min-width: 768px) {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+
+  & a {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--main-color);
+    box-shadow: 8px 11px 26px -9px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: 0.2s ease-in-out;
+    @media screen and (min-width: 768px) {
+      width: 90px;
+      height: 90px;
+    }
+  }
+}
+
+.up {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.down {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+.phone {
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  fill: #00ff00;
+  @media screen and (min-width: 768px) {
+    margin-top: 1.5rem;
+  }
+}
+.slack {
+  margin-top: 1rem;
+  margin-left: -0.5rem;
+}
+.linkedin {
+  width: 30px;
+  height: 30px;
+  margin-top: 0.4rem;
+  margin-left: -0.5rem;
+  fill: #0077b5;
+  color: white;
+  @media screen and (min-width: 768px) {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.email {
+  fill: rgb(199, 77, 32);
+  margin-top: 0.6rem;
+  margin-left: 0.5rem;
+}
+.viber {
+  fill: #7d3daf;
+  margin-top: -0.6rem;
+  margin-left: 0.5rem;
+}
+.github {
+  margin-top: -0.6rem;
+  margin-left: 0.5rem;
+}
+.whatsapp {
+  fill: #00ff00;
+  stroke: white;
+  margin-top: -0.6rem;
+  margin-left: -0.5rem;
+}
+.telegram {
+  margin-top: -0.6rem;
+  margin-left: -0.5rem;
+  fill: #368ef1;
+}
+.card1 {
+  border-radius: 90px 5px 5px 5px;
+}
+
+.card2 {
+  border-radius: 5px 90px 5px 5px;
+}
+
+.card3 {
+  border-radius: 5px 5px 5px 90px;
+}
+
+.card4 {
+  border-radius: 5px 5px 90px 5px;
+}
+
+.card1:has(.phone):is(:hover, :focus),
+.card1:has(.phone):is(:hover, :focus) {
+  scale: 1.1;
+  background: #00ff00;
+  & .phone {
+    fill: white;
+  }
+}
+.card1:has(.email):is(:hover, :focus) {
+  scale: 1.1;
+  background: rgb(199, 77, 32);
+  & .email {
+    fill: white;
+  }
+}
+
+.card2:has(.slack):is(:hover, :focus) {
+  scale: 1.1;
+  background: white;
+  & .slack {
+    fill: white;
+  }
+}
+
+.card2:has(.linkedin):is(:hover, :focus) {
+  scale: 1.1;
+  background: #0077b5;
+  & .linkedin {
+    fill: white;
+    color: #0077b5;
+  }
+}
+
+.card3:has(.github):is(:hover, :focus) {
+  scale: 1.1;
+  background: black;
+  & .github {
+    fill: white;
+  }
+}
+.card3:has(.viber):is(:hover, :focus) {
+  scale: 1.1;
+  background: #7d3daf;
+  & .viber {
+    fill: white;
+  }
+}
+
+.card4:has(.telegram):is(:hover, :focus) {
+  scale: 1.1;
+  background: #368ef1;
+  & .telegram {
+    fill: white;
+  }
+}
+.card4:has(.whatsapp):is(:hover, :focus) {
+  scale: 1.1;
+  background: #00ff00;
+  & .whatsapp {
+    fill: white;
+  }
+}
