@@ -8,7 +8,7 @@ export const contacts: Contact[] = [
   { title: 'phone', link: 'tel:+380936205130', icon: `${svgIcon}#icon-mobile` },
   {
     title: 'slack',
-    link: 'https://slack.com/app_redirect?team=U0872ULPBNH',
+    link: 'https://join.slack.com/t/contact-jfx5995/shared_invite/zt-32v3jq5fl-CVcd74Dm4M0dk82ZGKIvdQ',
 
     icon: `${svgIcon}#icon-slack`,
   },
