@@ -4,6 +4,7 @@ import Container from '../../layout/Container/Container';
 import { useTranslation } from 'react-i18next';
 import ContactsLinksList from '../ContactsLinksList/ContactsLinksList';
 import { contacts } from '../../assets/contacts';
+import UploadLink from '../UploadLink/UploadLink';
 const Contacts = () => {
   const { t } = useTranslation();
   const firstList = contacts.slice(0, 4);
@@ -15,15 +16,10 @@ const Contacts = () => {
         <SectionTitle id="contacts" text={t('contacts.title')} />
         <div className={s.wrap}>
           <ContactsLinksList links={firstList} />
-          <a
-            className={s.cv}
-            target="_blank"
-            rel="noopener noreferrer nofollow"
-            aria-label="Resume"
-            href="/Evgen_Kulbachenko_FullStack_Developer.pdf"
-          >
-            open cv
-          </a>
+          <UploadLink
+            text={t('contacts.upload_cv')}
+            link={'/Evgen_Kulbachenko_FullStack_Developer.pdf'}
+          />
           <ContactsLinksList links={secondList} />
         </div>
       </Container>

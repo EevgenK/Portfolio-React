@@ -1,0 +1,29 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  @media screen and (min-width: 1440px) {
+    gap: 26px;
+    flex-direction: row;
+  }
+
+  & a {
+    color: var(--grey);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.2s ease-in-out;
+    &:is(:hover, :focus) {
+      color: var(--second-hover);
+    }
+  }
+  & svg {
+    fill: currentColor;
+    width: 20px;
+    height: 20px;
+    @media screen and (min-width: 1440px) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}

@@ -8,7 +8,8 @@ export const contacts: Contact[] = [
   { title: 'phone', link: 'tel:+380936205130', icon: `${svgIcon}#icon-mobile` },
   {
     title: 'slack',
-    link: 'mailto:kulbachenko.evgen@gmail.com',
+    link: 'https://slack.com/app_redirect?team=U0872ULPBNH',
+
     icon: `${svgIcon}#icon-slack`,
   },
 
@@ -35,12 +36,17 @@ export const contacts: Contact[] = [
 
   {
     title: 'viber',
-    link: '/',
+    link: 'viber://chat?number=%2B380936205130',
     icon: `${svgIcon}#icon-viber`,
   },
   {
     title: 'whatsapp',
     link: 'https://wa.me/qr/YSGRK2FDNQ52P1',
     icon: `${svgIcon}#icon-whatsapp`,
+  },
+  {
+    title: 'location',
+    link: 'https://maps.app.goo.gl/2m9RdqtC8gDbimpK6',
+    icon: `${svgIcon}#icon-location`,
   },
 ];

@@ -95,6 +95,9 @@ export const uk = {
     },
     contacts: {
       title: 'Мої контакти',
+      upload_cv: 'відкрити резюме',
+      rights: 'Всі права захищені',
+      location: 'Біла Церква, Україна',
     },
   },
 };

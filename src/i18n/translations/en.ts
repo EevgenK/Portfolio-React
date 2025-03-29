@@ -96,6 +96,9 @@ export const en = {
     },
     contacts: {
       title: 'my contacts',
+      upload_cv: 'open cv',
+      rights: 'All rights reserved',
+      location: 'Bila Tserkva, Ukraine',
     },
   },
 };

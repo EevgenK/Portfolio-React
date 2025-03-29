@@ -135,6 +135,10 @@
     }
   }
 }
+:global(.swiper-slide:not(.swiper-slide-active) a) {
+  pointer-events: none;
+  opacity: 0.5; /* Додатково, щоб зробити посилання менш помітним */
+}
 .description {
   font-size: 10px;
   line-height: 1rem;
