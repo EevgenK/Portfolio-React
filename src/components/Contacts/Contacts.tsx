@@ -15,7 +15,15 @@ const Contacts = () => {
         <SectionTitle id="contacts" text={t('contacts.title')} />
         <div className={s.wrap}>
           <ContactsLinksList links={firstList} />
-          <button className={s.cv}>DOWNLOAD CV</button>
+          <a
+            className={s.cv}
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            aria-label="Resume"
+            href="/Evgen_Kulbachenko_FullStack_Developer.pdf"
+          >
+            open cv
+          </a>
           <ContactsLinksList links={secondList} />
         </div>
       </Container>
