@@ -38,7 +38,7 @@ export const en = {
     projects: {
       title: 'My Projects',
       description: 'Description',
-      stack: 'Used Stack',
+      stack: 'Used Stack ',
       view: 'view',
       visit: 'visit',
       aquatrack: {
@@ -99,6 +99,15 @@ export const en = {
       upload_cv: 'open cv',
       rights: 'All rights reserved',
       location: 'Bila Tserkva, Ukraine',
+      contact_by: 'contact by ',
+    },
+    education: {
+      button: 'click or hover to see education',
+      it: 'IT School GoIT',
+      inst: 'Institute of Tourism of the FTU of Ukraine',
+      years: 'Years:',
+      occupation_it: 'Occupation: Fullstack Developer',
+      occupation_inst: 'Occupation: Tourism Manager',
     },
   },
 };

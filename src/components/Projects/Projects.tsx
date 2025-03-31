@@ -66,10 +66,10 @@ const Projects = () => {
                 {t(`projects.${item.title}.title`)}
               </h3>
               <p className={s.description}>
-                <span>{t('projects.description')}:</span>{' '}
+                <span>{t('projects.description')}:</span>
                 {t(`projects.${item.title}.description`)}
               </p>
-              <p className={s.stacks}>
+              <p className={s.description}>
                 <span>{t('projects.stack')}:</span> {item.stacks}
               </p>
               <div className={s.links_wrap}>

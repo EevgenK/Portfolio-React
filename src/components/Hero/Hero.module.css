@@ -1,6 +1,6 @@
 .hero {
   background-image: linear-gradient(to right, #7777afcc, #206bce8e),
-    url(../../../public/img/hero_bg.png);
+    url(../../../public/img/hero_bg.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

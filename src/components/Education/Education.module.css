@@ -1,0 +1,145 @@
+.list {
+  width: 100%;
+  column-count: 2;
+  column-gap: 10px;
+}
+.edu {
+  line-height: 1rem;
+  text-transform: uppercase;
+  height: 30px;
+  @media screen and (min-width: 768px) {
+    height: 40px;
+  }
+  @media screen and (min-width: 1440px) {
+    height: 20px;
+  }
+}
+
+.iconWrapper {
+  position: relative;
+  z-index: 2;
+  transition: transform 0.5s ease-in-out;
+}
+.icon {
+  fill: currentColor;
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 120%;
+
+  min-width: 200px;
+  z-index: 2;
+  background: var(--main-color);
+  border: 1px solid var(--grey);
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 8px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease-in-out, bottom 0.5s ease-in-out;
+  @media screen and (min-width: 375px) {
+    left: 1%;
+    min-width: 300px;
+  }
+  @media screen and (min-width: 768px) {
+    left: 110%;
+    bottom: 50%;
+    transform: translateY(50%);
+    padding: 12px;
+    min-width: 400px;
+  }
+  @media screen and (min-width: 1440px) {
+    min-width: 580px;
+  }
+}
+
+.tooltip::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -8px;
+  width: 16px;
+  height: 16px;
+  border-left: 1px solid var(--grey);
+  border-bottom: 1px solid var(--grey);
+  transform: translateY(-50%) rotate(45deg);
+  background: inherit;
+  transition: transform 0.5s ease-in-out;
+}
+
+.tooltipContainer {
+  width: fit-content;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-transform: uppercase;
+  padding: 6px 20px;
+  color: var(--grey);
+  font-size: 12px;
+  line-height: 1.2rem;
+
+  cursor: pointer;
+  border: 2px solid var(--grey);
+  border-radius: 6px;
+  background: linear-gradient(var(--main-color), var(--main-hover));
+  box-shadow: 0px 6px 12px 0px #0009;
+  margin-top: 10px;
+  text-shadow: 1px 1px #000a;
+  transition: 0.5s ease-in-out;
+  @media screen and (min-width: 768px) {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.5rem;
+    width: 40%;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 18px;
+    width: fit-content;
+  }
+  &:is(:hover, :focus-visible) .tooltip {
+    opacity: 1;
+  }
+  &:is(:hover, :focus-visible) .iconWrapper {
+    transform: rotate(360deg) scale(1.1);
+  }
+}
+
+.tooltipText {
+  font-size: 10px;
+  width: 100%;
+  column-count: 2;
+  column-gap: 6px;
+  @media screen and (min-width: 768px) {
+    font-size: inherit;
+  }
+}
+
+.tooltipContainer:is(:hover, :focus-visible, :active) {
+  box-shadow: 0px 0px 0px 0px #0000;
+}
+.tooltipContainer::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-65deg, #0000 40%, #fff7 50%, #0000 70%);
+  background-size: 200% 100%;
+  background-repeat: no-repeat;
+  animation: thing 4s ease infinite;
+}
+@keyframes thing {
+  0% {
+    background-position: 130%;
+    opacity: 1;
+  }
+
+  to {
+    background-position: -166%;
+    opacity: 0;
+  }
+}

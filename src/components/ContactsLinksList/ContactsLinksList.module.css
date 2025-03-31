@@ -11,28 +11,67 @@ svg {
   display: flex;
   flex-direction: column;
   gap: 0.5em;
+}
+.link {
+  position: relative;
 
-  & a {
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
-    outline: none;
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--main-color);
-    box-shadow: 8px 11px 26px -9px rgba(0, 0, 0, 0.5);
-    overflow: hidden;
-    transition: 0.2s ease-in-out;
+  color: white;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--main-color);
+  box-shadow: 8px 11px 26px -9px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  transition: 0.2s ease-in-out;
+  &::after {
+    content: attr(data-tooltip);
+    position: absolute;
+
+    background: inherit;
+    color: inherit;
+    padding: 4px 2px;
+    width: 58px;
+
+    font-size: 8px;
+    will-change: opacity, transform;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease-in-out;
+    pointer-events: none;
+    @media screen and (min-width: 375px) {
+      padding: 4px;
+      width: 68px;
+    }
     @media screen and (min-width: 768px) {
-      width: 90px;
-      height: 90px;
+      width: 120px;
+      padding: 0.8rem 0.8rem;
+      font-size: 12px;
     }
     @media screen and (min-width: 1440px) {
-      width: 110px;
-      height: 110px;
+      padding: 1.5rem 1.5rem;
+      font-size: 16px;
+      width: 170px;
     }
+  }
+  &:focus:not(:hover) {
+    background-color: transparent; /* або інші стилі, що відміняють фокус */
+  }
+  &:is(:hover, :focus)::after {
+    visibility: visible;
+    opacity: 0.7;
+  }
+  @media screen and (min-width: 768px) {
+    width: 90px;
+    height: 90px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 140px;
+    height: 140px;
   }
 }
 
@@ -40,12 +79,23 @@ svg {
   display: flex;
   flex-direction: row;
   gap: 0.5em;
+  & .link::after {
+    @media screen and (min-width: 375px) {
+      border-radius: 90px 5px 90px 5px;
+    }
+  }
 }
 
 .down {
   display: flex;
   flex-direction: row;
   gap: 0.5em;
+  & .link::after {
+    border-radius: 6px;
+    @media screen and (min-width: 375px) {
+      border-radius: 5px 90px 5px 90px;
+    }
+  }
 }
 .phone {
   margin-top: 1rem;
@@ -55,6 +105,7 @@ svg {
     margin-top: 1.5rem;
   }
 }
+
 .slack {
   margin-top: 1rem;
   margin-left: -0.5rem;
@@ -99,30 +150,157 @@ svg {
 }
 .card1 {
   border-radius: 90px 5px 5px 5px;
+  &::after {
+    top: 2%;
+    @media screen and (min-width: 768px) {
+      top: -6%;
+    }
+  }
+  &:has(.phone)::after {
+    left: 220%;
+    transform: translate(-10%);
+    @media screen and (min-width: 375px) {
+      transform: translate(0%);
+    }
+    @media screen and (min-width: 768px) {
+      transform: translate(12%);
+    }
+    @media screen and (min-width: 1440px) {
+      transform: translate(86%);
+    }
+  }
+
+  &:has(.email)::after {
+    right: 114%;
+    transform: translate(12%);
+    @media screen and (min-width: 375px) {
+      transform: translate(0%);
+    }
+    @media screen and (min-width: 768px) {
+      transform: translate(-20%);
+    }
+    @media screen and (min-width: 1440px) {
+      transform: translate(-94%);
+    }
+  }
 }
 
 .card2 {
   border-radius: 5px 90px 5px 5px;
+  &::after {
+    top: 2%;
+    @media screen and (min-width: 768px) {
+      top: -6%;
+    }
+  }
+  &:has(.slack)::after {
+    left: 114%;
+    color: #ebb02e;
+    transform: translate(-10%);
+    @media screen and (min-width: 375px) {
+      transform: translate(0%);
+    }
+    @media screen and (min-width: 768px) {
+      transform: translate(20%);
+    }
+    @media screen and (min-width: 1440px) {
+      transform: translate(94%);
+    }
+  }
+  &:has(.linkedin)::after {
+    right: 222%;
+    transform: translate(12%);
+    @media screen and (min-width: 375px) {
+      transform: translate(0%);
+    }
+    @media screen and (min-width: 768px) {
+      transform: translate(-12%);
+    }
+    @media screen and (min-width: 1440px) {
+      transform: translate(-84%);
+    }
+  }
 }
 
 .card3 {
   border-radius: 5px 5px 5px 90px;
+  &::after {
+    top: -102%;
+  }
+  &:has(.github)::after {
+    left: 220%;
+    transform: translate(-10%);
+    @media screen and (min-width: 375px) {
+      transform: translate(0%);
+    }
+    @media screen and (min-width: 768px) {
+      transform: translate(12%);
+    }
+    @media screen and (min-width: 1440px) {
+      transform: translate(86%);
+    }
+  }
+  &:has(.viber)::after {
+    right: 114%;
+    transform: translate(12%);
+    @media screen and (min-width: 375px) {
+      transform: translate(0%);
+    }
+    @media screen and (min-width: 768px) {
+      transform: translate(-20%);
+    }
+    @media screen and (min-width: 1440px) {
+      transform: translate(-94%);
+    }
+  }
 }
 
 .card4 {
   border-radius: 5px 5px 90px 5px;
+  &::after {
+    top: -102%;
+  }
+  &:has(.telegram)::after {
+    left: 114%;
+    transform: translate(-10%);
+    @media screen and (min-width: 375px) {
+      transform: translate(0%);
+    }
+    @media screen and (min-width: 768px) {
+      transform: translate(20%);
+    }
+    @media screen and (min-width: 1440px) {
+      transform: translate(94%);
+    }
+  }
+  &:has(.whatsapp)::after {
+    right: 222%;
+    transform: translate(12%);
+    @media screen and (min-width: 375px) {
+      transform: translate(0%);
+    }
+    @media screen and (min-width: 768px) {
+      transform: translate(-12%);
+    }
+    @media screen and (min-width: 1440px) {
+      transform: translate(-84%);
+    }
+  }
 }
 
-.card1:has(.phone):is(:hover, :focus-visible),
 .card1:has(.phone):is(:hover, :focus-visible) {
-  scale: 1.1;
+  transform: scale(1.1);
   background: #00ff00;
   & .phone {
     fill: white;
   }
+
+  &:hover::after {
+    background: #00ff00;
+  }
 }
 .card1:has(.email):is(:hover, :focus) {
-  scale: 1.1;
+  transform: scale(1.1);
   background: rgb(199, 77, 32);
   & .email {
     fill: white;
@@ -130,7 +308,7 @@ svg {
 }
 
 .card2:has(.slack):is(:hover, :focus) {
-  scale: 1.1;
+  transform: scale(1.1);
   background: white;
   & .slack {
     fill: white;
@@ -138,7 +316,7 @@ svg {
 }
 
 .card2:has(.linkedin):is(:hover, :focus) {
-  scale: 1.1;
+  transform: scale(1.1);
   background: #0077b5;
   & .linkedin {
     fill: white;
@@ -147,14 +325,14 @@ svg {
 }
 
 .card3:has(.github):is(:hover, :focus) {
-  scale: 1.1;
+  transform: scale(1.1);
   background: black;
   & .github {
     fill: white;
   }
 }
 .card3:has(.viber):is(:hover, :focus) {
-  scale: 1.1;
+  transform: scale(1.1);
   background: #7d3daf;
   & .viber {
     fill: white;
@@ -162,14 +340,14 @@ svg {
 }
 
 .card4:has(.telegram):is(:hover, :focus) {
-  scale: 1.1;
+  transform: scale(1.1);
   background: #368ef1;
   & .telegram {
     fill: white;
   }
 }
 .card4:has(.whatsapp):is(:hover, :focus) {
-  scale: 1.1;
+  transform: scale(1.1);
   background: #00ff00;
   & .whatsapp {
     fill: white;

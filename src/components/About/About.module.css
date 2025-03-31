@@ -2,7 +2,7 @@
   color: var(--grey);
   font-size: 14px;
   line-height: 1.2rem;
-  text-indent: 1rem;
+
   text-align: justify;
   @media screen and (min-width: 768px) {
     font-size: 16px;
@@ -18,13 +18,13 @@
   border-radius: 8px;
   float: right;
   margin-left: 10px;
-  background: linear-gradient(to bottom, var(--main-color), var(--main-hover));
+  background: var(--main-bg);
   box-shadow: 8px 11px 26px -9px rgba(0, 0, 0, 0.5);
   @media screen and (min-width: 768px) {
-    width: 170px;
+    width: 230px;
   }
   @media screen and (min-width: 1440px) {
-    width: 250px;
+    width: 330px;
   }
 }
 .git_wrap {
@@ -40,7 +40,7 @@
     width: 100%;
   }
   @media screen and (min-width: 1440px) {
-    width: fit-content;
+    width: 68%;
   }
   & h4 {
     text-align: center;
@@ -48,5 +48,6 @@
   }
 }
 .git {
+  margin: 0 auto;
   filter: hue-rotate(120deg);
 }

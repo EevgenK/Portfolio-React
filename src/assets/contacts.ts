@@ -4,11 +4,14 @@ export interface Contact {
   icon: string;
 }
 const svgIcon = '/icons/sprite.svg';
+
 export const contacts: Contact[] = [
   { title: 'phone', link: 'tel:+380936205130', icon: `${svgIcon}#icon-mobile` },
   {
     title: 'slack',
-    link: 'https://join.slack.com/t/contact-jfx5995/shared_invite/zt-32v3jq5fl-CVcd74Dm4M0dk82ZGKIvdQ',
+    link: `https://join.slack.com/t/contact-jfx5995/shared_invite/zt-32v3jq5fl-${
+      import.meta.env.S_ID
+    }`,
 
     icon: `${svgIcon}#icon-slack`,
   },
