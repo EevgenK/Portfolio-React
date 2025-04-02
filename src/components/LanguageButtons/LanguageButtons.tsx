@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import i18next from 'i18next';
 import s from './LanguageButtons.module.css';
 import { LOCALS, LocalValueType } from '../../i18n/constants';
-import clsx from 'clsx';
 import LighterButton from '../../blocks/LighterButton/LighterButton';
 
 const LanguageButtons = () => {
@@ -12,7 +11,7 @@ const LanguageButtons = () => {
     const handleLangChange = (lng: string) => {
       setCurrentLang(lng);
     };
-
+    setCurrentLang(i18next.language);
     i18next.on('languageChanged', handleLangChange);
 
     return () => {

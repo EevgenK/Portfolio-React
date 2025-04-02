@@ -13,6 +13,10 @@ i18n
     // debug: true,
     fallbackLng: LOCALS.EN,
     interpolation: { escapeValue: false },
+    detection: {
+      order: ['localStorage', 'navigator'],
+      caches: ['localStorage'],
+    },
     resources: {
       en,
       uk,
