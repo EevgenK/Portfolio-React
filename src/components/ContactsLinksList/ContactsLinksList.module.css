@@ -31,19 +31,17 @@ svg {
   &::after {
     content: attr(data-tooltip);
     position: absolute;
-
     background: inherit;
     color: inherit;
     padding: 4px 2px;
     width: 58px;
-
     font-size: 8px;
     will-change: opacity, transform;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.2s ease-in-out;
     pointer-events: none;
-    @media screen and (min-width: 375px) {
+    /* @media screen and (min-width: 375px) {
       padding: 4px;
       width: 68px;
     }
@@ -56,7 +54,7 @@ svg {
       padding: 1.5rem 1.5rem;
       font-size: 16px;
       width: 170px;
-    }
+    } */
   }
   &:focus:not(:hover) {
     background-color: transparent; /* або інші стилі, що відміняють фокус */
@@ -85,14 +83,6 @@ svg {
   display: flex;
   flex-direction: row;
   gap: 0.5em;
-}
-@media screen and (min-width: 375px) {
-  .up .link::after {
-    border-radius: 90px 5px 90px 5px;
-  }
-  .down .link::after {
-    border-radius: 5px 90px 5px 90px;
-  }
 }
 
 .phone {
@@ -154,17 +144,45 @@ svg {
       top: -6%;
     }
   }
+  &:has(.phone)::after {
+    left: 220%;
+    transform: translate(-10%);
+  }
 }
-.card1:has(.phone)::after {
-  left: 220%;
-  transform: translate(-10%);
-  @media screen and (min-width: 375px) {
+
+@media screen and (min-width: 375px) {
+  .link::after {
+    padding: 4px;
+    width: 68px;
+  }
+  .up .link::after {
+    border-radius: 90px 5px 90px 5px;
+  }
+  .down .link::after {
+    border-radius: 5px 90px 5px 90px;
+  }
+  .card1:has(.phone)::after {
     transform: translate(0%);
   }
-  @media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 768px) {
+  .link::after {
+    width: 120px;
+    padding: 0.8rem 0.8rem;
+    font-size: 12px;
+  }
+  .card1:has(.phone)::after {
     transform: translate(12%);
   }
-  @media screen and (min-width: 1440px) {
+}
+@media screen and (min-width: 1440px) {
+  .link::after {
+    padding: 1.5rem 1.5rem;
+    font-size: 16px;
+    width: 170px;
+  }
+  .card1:has(.phone)::after {
     transform: translate(86%);
   }
 }
