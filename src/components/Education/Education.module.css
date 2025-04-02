@@ -7,12 +7,6 @@
   line-height: 1rem;
   text-transform: uppercase;
   height: 30px;
-  @media screen and (min-width: 768px) {
-    height: 40px;
-  }
-  @media screen and (min-width: 1440px) {
-    height: 20px;
-  }
 }
 
 .iconWrapper {
@@ -30,7 +24,6 @@
 .tooltip {
   position: absolute;
   bottom: 120%;
-
   min-width: 200px;
   z-index: 2;
   background: var(--main-color);
@@ -41,20 +34,6 @@
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.5s ease-in-out, bottom 0.5s ease-in-out;
-  @media screen and (min-width: 375px) {
-    left: 1%;
-    min-width: 300px;
-  }
-  @media screen and (min-width: 768px) {
-    left: 110%;
-    bottom: 50%;
-    transform: translateY(50%);
-    padding: 12px;
-    min-width: 400px;
-  }
-  @media screen and (min-width: 1440px) {
-    min-width: 580px;
-  }
 }
 
 .tooltip::before {
@@ -83,7 +62,6 @@
   color: var(--grey);
   font-size: 12px;
   line-height: 1.2rem;
-
   cursor: pointer;
   border: 2px solid var(--grey);
   border-radius: 6px;
@@ -92,18 +70,9 @@
   margin-top: 10px;
   text-shadow: 1px 1px #000a;
   transition: 0.5s ease-in-out;
-  @media screen and (min-width: 768px) {
-    margin-top: 20px;
-    font-size: 16px;
-    line-height: 1.5rem;
-    width: 40%;
-  }
-  @media screen and (min-width: 1440px) {
-    font-size: 18px;
-    width: fit-content;
-  }
+
   &:is(:hover, :focus-visible) .tooltip {
-    opacity: 1;
+    opacity: 0.9;
   }
   &:is(:hover, :focus-visible) .iconWrapper {
     transform: rotate(360deg) scale(1.1);
@@ -115,9 +84,6 @@
   width: 100%;
   column-count: 2;
   column-gap: 6px;
-  @media screen and (min-width: 768px) {
-    font-size: inherit;
-  }
 }
 
 .tooltipContainer:is(:hover, :focus-visible, :active) {
@@ -141,5 +107,44 @@
   to {
     background-position: -166%;
     opacity: 0;
+  }
+}
+@media screen and (min-width: 375px) {
+  .tooltip {
+    left: 1%;
+    min-width: 300px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .edu {
+    height: 40px;
+  }
+  .tooltip {
+    left: 110%;
+    bottom: 50%;
+    transform: translateY(50%);
+    padding: 12px;
+    min-width: 400px;
+  }
+  .tooltipContainer {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.5rem;
+    width: 40%;
+  }
+  .tooltipText {
+    font-size: inherit;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .edu {
+    height: 20px;
+  }
+  .tooltip {
+    min-width: 580px;
+  }
+  .tooltipContainer {
+    font-size: 18px;
+    width: fit-content;
   }
 }

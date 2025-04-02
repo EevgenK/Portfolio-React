@@ -16,6 +16,7 @@ const ContactsLinksList = ({ links }: ContactsLinksListProps) => {
           target="_blank"
           key={contact.link}
           href={contact.link}
+          rel="noopener noreferrer"
           className={clsx(s.link, s[`card${idx + 1 + startIdx}`])}
         >
           <svg className={s[contact.title]}>

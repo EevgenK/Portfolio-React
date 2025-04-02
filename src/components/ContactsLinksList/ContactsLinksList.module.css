@@ -1,10 +1,6 @@
 svg {
   width: 25px;
   height: 25px;
-  @media screen and (min-width: 768px) {
-    width: 50px;
-    height: 50px;
-  }
 }
 
 .main {
@@ -14,7 +10,6 @@ svg {
 }
 .link {
   position: relative;
-
   color: white;
   cursor: pointer;
   width: 50px;
@@ -41,35 +36,11 @@ svg {
     visibility: hidden;
     transition: opacity 0.2s ease-in-out;
     pointer-events: none;
-    /* @media screen and (min-width: 375px) {
-      padding: 4px;
-      width: 68px;
-    }
-    @media screen and (min-width: 768px) {
-      width: 120px;
-      padding: 0.8rem 0.8rem;
-      font-size: 12px;
-    }
-    @media screen and (min-width: 1440px) {
-      padding: 1.5rem 1.5rem;
-      font-size: 16px;
-      width: 170px;
-    } */
   }
-  &:focus:not(:hover) {
-    background-color: transparent; /* або інші стилі, що відміняють фокус */
-  }
+
   &:is(:hover, :focus)::after {
     visibility: visible;
     opacity: 0.7;
-  }
-  @media screen and (min-width: 768px) {
-    width: 90px;
-    height: 90px;
-  }
-  @media screen and (min-width: 1440px) {
-    width: 140px;
-    height: 140px;
   }
 }
 
@@ -148,56 +119,23 @@ svg {
     left: 220%;
     transform: translate(-10%);
   }
-}
-
-@media screen and (min-width: 375px) {
-  .link::after {
-    padding: 4px;
-    width: 68px;
-  }
-  .up .link::after {
-    border-radius: 90px 5px 90px 5px;
-  }
-  .down .link::after {
-    border-radius: 5px 90px 5px 90px;
-  }
-  .card1:has(.phone)::after {
-    transform: translate(0%);
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .link::after {
-    width: 120px;
-    padding: 0.8rem 0.8rem;
-    font-size: 12px;
-  }
-  .card1:has(.phone)::after {
+  &:has(.email)::after {
+    right: 114%;
     transform: translate(12%);
   }
-}
-@media screen and (min-width: 1440px) {
-  .link::after {
-    padding: 1.5rem 1.5rem;
-    font-size: 16px;
-    width: 170px;
+  &:has(.phone):is(:hover, :focus-visible) {
+    transform: scale(1.1);
+    background: #00ff00;
+    & .phone {
+      fill: white;
+    }
   }
-  .card1:has(.phone)::after {
-    transform: translate(86%);
-  }
-}
-
-.card1:has(.email)::after {
-  right: 114%;
-  transform: translate(12%);
-  @media screen and (min-width: 375px) {
-    transform: translate(0%);
-  }
-  @media screen and (min-width: 768px) {
-    transform: translate(-20%);
-  }
-  @media screen and (min-width: 1440px) {
-    transform: translate(-94%);
+  &:has(.email):is(:hover, :focus) {
+    transform: scale(1.1);
+    background: rgb(199, 77, 32);
+    & .email {
+      fill: white;
+    }
   }
 }
 
@@ -213,27 +151,24 @@ svg {
     left: 114%;
     color: #ebb02e;
     transform: translate(-10%);
-    @media screen and (min-width: 375px) {
-      transform: translate(0%);
-    }
-    @media screen and (min-width: 768px) {
-      transform: translate(20%);
-    }
-    @media screen and (min-width: 1440px) {
-      transform: translate(94%);
-    }
   }
   &:has(.linkedin)::after {
     right: 222%;
     transform: translate(12%);
-    @media screen and (min-width: 375px) {
-      transform: translate(0%);
+  }
+  &:has(.slack):is(:hover, :focus) {
+    transform: scale(1.1);
+    background: white;
+    & .slack {
+      fill: white;
     }
-    @media screen and (min-width: 768px) {
-      transform: translate(-12%);
-    }
-    @media screen and (min-width: 1440px) {
-      transform: translate(-84%);
+  }
+  &:has(.linkedin):is(:hover, :focus) {
+    transform: scale(1.1);
+    background: #0077b5;
+    & .linkedin {
+      fill: white;
+      color: #0077b5;
     }
   }
 }
@@ -246,27 +181,23 @@ svg {
   &:has(.github)::after {
     left: 220%;
     transform: translate(-10%);
-    @media screen and (min-width: 375px) {
-      transform: translate(0%);
-    }
-    @media screen and (min-width: 768px) {
-      transform: translate(12%);
-    }
-    @media screen and (min-width: 1440px) {
-      transform: translate(86%);
-    }
   }
   &:has(.viber)::after {
     right: 114%;
     transform: translate(12%);
-    @media screen and (min-width: 375px) {
-      transform: translate(0%);
+  }
+  &:has(.github):is(:hover, :focus) {
+    transform: scale(1.1);
+    background: black;
+    & .github {
+      fill: white;
     }
-    @media screen and (min-width: 768px) {
-      transform: translate(-20%);
-    }
-    @media screen and (min-width: 1440px) {
-      transform: translate(-94%);
+  }
+  &:has(.viber):is(:hover, :focus) {
+    transform: scale(1.1);
+    background: #7d3daf;
+    & .viber {
+      fill: white;
     }
   }
 }
@@ -279,93 +210,105 @@ svg {
   &:has(.telegram)::after {
     left: 114%;
     transform: translate(-10%);
-    @media screen and (min-width: 375px) {
-      transform: translate(0%);
-    }
-    @media screen and (min-width: 768px) {
-      transform: translate(20%);
-    }
-    @media screen and (min-width: 1440px) {
-      transform: translate(94%);
-    }
   }
   &:has(.whatsapp)::after {
     right: 222%;
     transform: translate(12%);
-    @media screen and (min-width: 375px) {
-      transform: translate(0%);
-    }
-    @media screen and (min-width: 768px) {
-      transform: translate(-12%);
-    }
-    @media screen and (min-width: 1440px) {
-      transform: translate(-84%);
+  }
+  &:has(.telegram):is(:hover, :focus) {
+    transform: scale(1.1);
+    background: #368ef1;
+    & .telegram {
+      fill: white;
     }
   }
-}
-
-.card1:has(.phone):is(:hover, :focus-visible) {
-  transform: scale(1.1);
-  background: #00ff00;
-  & .phone {
-    fill: white;
-  }
-
-  &:hover::after {
+  &:has(.whatsapp):is(:hover, :focus) {
+    transform: scale(1.1);
     background: #00ff00;
-  }
-}
-.card1:has(.email):is(:hover, :focus) {
-  transform: scale(1.1);
-  background: rgb(199, 77, 32);
-  & .email {
-    fill: white;
+    & .whatsapp {
+      fill: white;
+    }
   }
 }
 
-.card2:has(.slack):is(:hover, :focus) {
-  transform: scale(1.1);
-  background: white;
-  & .slack {
-    fill: white;
+@media screen and (min-width: 375px) {
+  .link::after {
+    padding: 4px;
+    width: 68px;
+  }
+  .up .link::after {
+    border-radius: 90px 5px 90px 5px;
+  }
+  .down .link::after {
+    border-radius: 5px 90px 5px 90px;
+  }
+  .card1:has(.phone)::after,
+  .card1:has(.email)::after,
+  .card2:has(.slack)::after,
+  .card2:has(.linkedin)::after,
+  .card3:has(.github)::after,
+  .card3:has(.viber)::after,
+  .card4:has(.telegram)::after,
+  .card4:has(.whatsapp)::after {
+    transform: translate(0%);
   }
 }
 
-.card2:has(.linkedin):is(:hover, :focus) {
-  transform: scale(1.1);
-  background: #0077b5;
-  & .linkedin {
-    fill: white;
-    color: #0077b5;
+@media screen and (min-width: 768px) {
+  svg {
+    width: 50px;
+    height: 50px;
+  }
+  .link {
+    width: 90px;
+    height: 90px;
+  }
+  .link::after {
+    width: 120px;
+    padding: 0.8rem 0.8rem;
+    font-size: 12px;
+  }
+  .card1:has(.phone)::after,
+  .card3:has(.github)::after {
+    transform: translate(12%);
+  }
+  .card1:has(.email)::after,
+  .card3:has(.viber)::after {
+    transform: translate(-20%);
+  }
+  .card2:has(.slack)::after,
+  .card4:has(.telegram)::after {
+    transform: translate(20%);
+  }
+  .card2:has(.linkedin)::after,
+  .card4:has(.whatsapp)::after {
+    transform: translate(-12%);
   }
 }
-
-.card3:has(.github):is(:hover, :focus) {
-  transform: scale(1.1);
-  background: black;
-  & .github {
-    fill: white;
+@media screen and (min-width: 1440px) {
+  .link {
+    width: 140px;
+    height: 140px;
   }
-}
-.card3:has(.viber):is(:hover, :focus) {
-  transform: scale(1.1);
-  background: #7d3daf;
-  & .viber {
-    fill: white;
+  .link::after {
+    padding: 1.5rem 1.5rem;
+    font-size: 16px;
+    width: 170px;
   }
-}
-
-.card4:has(.telegram):is(:hover, :focus) {
-  transform: scale(1.1);
-  background: #368ef1;
-  & .telegram {
-    fill: white;
+  .card1:has(.phone)::after,
+  .card3:has(.github)::after {
+    transform: translate(86%);
   }
-}
-.card4:has(.whatsapp):is(:hover, :focus) {
-  transform: scale(1.1);
-  background: #00ff00;
-  & .whatsapp {
-    fill: white;
+  .card1:has(.email)::after,
+  .card3:has(.viber)::after {
+    transform: translate(-94%);
+  }
+  .card2:has(.slack)::after,
+  .card4:has(.telegram)::after {
+    transform: translate(94%);
+  }
+  .card2:has(.linkedin)::after,
+  .card4:has(.whatsapp)::after {
+    transform: translate(-84%);
   }
 }
