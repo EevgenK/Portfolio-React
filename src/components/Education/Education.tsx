@@ -9,7 +9,7 @@ const Education = () => {
       {t('education.button')}
       <div className={s.iconWrapper}>
         <svg className={s.icon}>
-          <use href="/public/icons/sprite.svg#icon-education" />
+          <use href="/icons/sprite.svg#icon-education" />
         </svg>
       </div>
       <div className={s.tooltip}>

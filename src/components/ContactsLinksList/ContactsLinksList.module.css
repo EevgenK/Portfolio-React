@@ -79,24 +79,22 @@ svg {
   display: flex;
   flex-direction: row;
   gap: 0.5em;
-  & .link::after {
-    @media screen and (min-width: 375px) {
-      border-radius: 90px 5px 90px 5px;
-    }
-  }
 }
 
 .down {
   display: flex;
   flex-direction: row;
   gap: 0.5em;
-  & .link::after {
-    border-radius: 6px;
-    @media screen and (min-width: 375px) {
-      border-radius: 5px 90px 5px 90px;
-    }
+}
+@media screen and (min-width: 375px) {
+  .up .link::after {
+    border-radius: 90px 5px 90px 5px;
+  }
+  .down .link::after {
+    border-radius: 5px 90px 5px 90px;
   }
 }
+
 .phone {
   margin-top: 1rem;
   margin-left: 0.5rem;
@@ -156,32 +154,32 @@ svg {
       top: -6%;
     }
   }
-  &:has(.phone)::after {
-    left: 220%;
-    transform: translate(-10%);
-    @media screen and (min-width: 375px) {
-      transform: translate(0%);
-    }
-    @media screen and (min-width: 768px) {
-      transform: translate(12%);
-    }
-    @media screen and (min-width: 1440px) {
-      transform: translate(86%);
-    }
+}
+.card1:has(.phone)::after {
+  left: 220%;
+  transform: translate(-10%);
+  @media screen and (min-width: 375px) {
+    transform: translate(0%);
   }
-
-  &:has(.email)::after {
-    right: 114%;
+  @media screen and (min-width: 768px) {
     transform: translate(12%);
-    @media screen and (min-width: 375px) {
-      transform: translate(0%);
-    }
-    @media screen and (min-width: 768px) {
-      transform: translate(-20%);
-    }
-    @media screen and (min-width: 1440px) {
-      transform: translate(-94%);
-    }
+  }
+  @media screen and (min-width: 1440px) {
+    transform: translate(86%);
+  }
+}
+
+.card1:has(.email)::after {
+  right: 114%;
+  transform: translate(12%);
+  @media screen and (min-width: 375px) {
+    transform: translate(0%);
+  }
+  @media screen and (min-width: 768px) {
+    transform: translate(-20%);
+  }
+  @media screen and (min-width: 1440px) {
+    transform: translate(-94%);
   }
 }
 
