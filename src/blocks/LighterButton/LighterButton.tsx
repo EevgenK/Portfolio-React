@@ -13,6 +13,7 @@ const LighterButton = ({ text, active, click }: LighterButtonProps) => {
       <button
         className={clsx(active ? [s.bt, s.active] : s.bt)}
         onClick={click}
+        aria-label="Switch language"
       >
         <div className={s.light_holder}>
           <div className={s.dot}></div>

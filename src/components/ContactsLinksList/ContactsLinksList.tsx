@@ -17,6 +17,7 @@ const ContactsLinksList = ({ links }: ContactsLinksListProps) => {
           key={contact.link}
           href={contact.link}
           rel="noopener noreferrer"
+          aria-label={`Link which allows to contact by ${contact.title}`}
           className={clsx(s.link, s[`card${idx + 1 + startIdx}`])}
         >
           <svg className={s[contact.title]}>

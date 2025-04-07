@@ -16,14 +16,3 @@
   display: block;
   width: 100%;
 }
-/*
- <li
-              className="card"
-              style={{ backgroundImage: `url(${items[0].image})` }}
-            >
-              <h3>{items[0].title}</h3>
-              <a className={s.link} href={items[0].link}>
-                VIEW
-              </a>
-            </li>
-            */

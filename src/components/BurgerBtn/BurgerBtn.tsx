@@ -16,6 +16,7 @@ const BurgerBtn = ({ modal }: BurgerBtnProps) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       className={s.burgerBtn}
+      aria-label="Open menu button"
     >
       {isHovered ? (
         <RxBorderSolid className={s.svg} />

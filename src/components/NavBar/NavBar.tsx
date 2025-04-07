@@ -10,22 +10,38 @@ const NavBar: FC<NavBarProps> = ({ modal, close }) => {
   return (
     <ul className={modal ? s.modal_menu : s.list}>
       <li className={s.card}>
-        <a onClick={() => modal && close?.()} href="#about">
+        <a
+          onClick={() => modal && close?.()}
+          href="#about"
+          aria-label="Link which moves to about section"
+        >
           {t('navigation.about')}
         </a>
       </li>
       <li className={s.card}>
-        <a onClick={() => modal && close?.()} href="#soft skills">
+        <a
+          onClick={() => modal && close?.()}
+          href="#soft skills"
+          aria-label="Link which moves to skills section"
+        >
           {t('navigation.skills')}
         </a>
       </li>
       <li className={s.card}>
-        <a onClick={() => modal && close?.()} href="#projects">
+        <a
+          onClick={() => modal && close?.()}
+          href="#projects"
+          aria-label="Link which moves to projects section"
+        >
           {t('navigation.projects')}
         </a>
       </li>
       <li className={s.card}>
-        <a onClick={() => modal && close?.()} href="#contacts">
+        <a
+          onClick={() => modal && close?.()}
+          href="#contacts"
+          aria-label="Link which moves to contacts section"
+        >
           {t('navigation.contacts')}
         </a>
       </li>

@@ -15,12 +15,12 @@ const Education = () => {
       <div className={s.tooltip}>
         <ul className={s.tooltipText}>
           <li key="ISG">
-            <h4 className={s.edu}>{t('education.it')} </h4>{' '}
+            <h3 className={s.edu}>{t('education.it')} </h3>{' '}
             <p>{t('education.years')} 2024 - 2025</p>
             <p>{t('education.occupation_it')}</p>
           </li>
           <li key="ITFPU">
-            <h4 className={s.edu}>{t('education.inst')}</h4>
+            <h3 className={s.edu}>{t('education.inst')}</h3>
             <p>{t('education.years')} 2004 - 2009</p>{' '}
             <p> {t('education.occupation_inst')}</p>
           </li>

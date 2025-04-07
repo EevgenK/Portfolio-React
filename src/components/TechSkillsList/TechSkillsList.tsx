@@ -10,7 +10,12 @@ const TechSkillsList = ({ items }: TechSkillsListProps) => {
     <ul className={s.skills}>
       {items.map((item, idx) => (
         <li className={s.item} key={idx}>
-          <img className={s.img} src={item.img} alt={item.title} width={40} />
+          <img
+            className={s.img}
+            src={item.img}
+            alt={`Icon for ${item.title}`}
+            width={40}
+          />
           <h4 className={s.title}>{item.title}</h4>
         </li>
       ))}

@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 const SoftSkillsList = () => {
   const { t } = useTranslation();
   return (
-    <StarBorder as="ul" className={s.skills} color="cyan" speed="6s">
+    <StarBorder as="div" className={s.skills} color="cyan" speed="6s">
       {softSkills.map((skill, idx) => (
         <li key={idx} className={s.skill}>
           <p>{t(`skills.${formatKey(skill)}`)}</p>

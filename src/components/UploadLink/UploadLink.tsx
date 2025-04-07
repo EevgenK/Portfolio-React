@@ -11,7 +11,7 @@ const UploadLink = ({ text, link }: UploadLinkProps) => {
       className={s.cv}
       target="_blank"
       rel="noopener noreferrer nofollow"
-      aria-label="Resume"
+      aria-label="Open resume"
       href={link}
     >
       {text}

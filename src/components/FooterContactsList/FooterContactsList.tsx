@@ -11,7 +11,12 @@ const FooterContactsList = () => {
 
   const renderContact = ({ title, link, icon }: Contact) => (
     <li key={title}>
-      <a href={link} target="_blank" rel="noopener noreferrer">
+      <a
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={`Link which allows to contact by ${title}`}
+      >
         <svg className={s[title]}>
           <use href={icon} />
         </svg>

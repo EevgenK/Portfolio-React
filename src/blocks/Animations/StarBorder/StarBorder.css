@@ -36,6 +36,21 @@
   position: relative;
 
   z-index: 1;
+
+  list-style: disc;
+  column-count: 2;
+  column-gap: 20px;
+  font-size: 12px;
+  line-height: 1.5rem;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    column-count: 3;
+  }
+  @media screen and (min-width: 1440px) {
+    column-count: 4;
+    font-size: 16px;
+  }
 }
 
 @keyframes star-movement-bottom {
