@@ -81,10 +81,11 @@ const Projects = () => {
                 >
                   {t('projects.view')}
                 </a>
-                <a href={item.git_link} target="blank">
-                  {' '}
-                  aria-label=
-                  {`Link which allows to view project ${item.title} on git hub`}
+                <a
+                  href={item.git_link}
+                  target="blank"
+                  aria-label={`Link which allows to view project ${item.title} on git hub`}
+                >
                   {t('projects.visit')}
                   <img src="/icons/github.svg" alt="GitHub" width={12} />
                 </a>
