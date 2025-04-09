@@ -49,18 +49,20 @@ const Projects = () => {
         >
           {myProjects.map((item) => (
             <SwiperSlide key={item.id} tag="li" className={s.card}>
-              <picture>
-                <source
-                  srcSet={`${item.image_src} 1x, ${item.image_srcset} 2x`}
-                  media="(min-width: 1440px)"
-                />
-                <img
-                  src={item.image_src}
-                  alt="project image"
-                  width="296"
-                  loading="lazy"
-                />
-              </picture>
+              <div className={s.picture_background}>
+                <picture>
+                  <source
+                    srcSet={`${item.image_src} 1x, ${item.image_srcset} 2x`}
+                    media="(min-width: 1440px)"
+                  />
+                  <img
+                    src={item.image_src}
+                    alt="project image"
+                    width="296"
+                    loading="lazy"
+                  />
+                </picture>
+              </div>
 
               <h3 className={s.card_title}>
                 {t(`projects.${item.title}.title`)}

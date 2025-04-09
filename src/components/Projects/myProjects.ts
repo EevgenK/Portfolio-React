@@ -9,6 +9,16 @@ export interface myProject {
 }
 export const myProjects: myProject[] = [
   {
+    id: 11,
+    title: 'rentalCar',
+    stacks:
+      'Html, СSS Modules, JS, Redux Toolkit, React, Axios, React Router, Formik, Yup',
+    deploy_link: 'https://rental-car-brown.vercel.app/',
+    git_link: 'https://github.com/EevgenK/rental-car',
+    image_src: '/img/pj-11-min.webp',
+    image_srcset: '/img/pj-11@2x-min.webp',
+  },
+  {
     id: 9,
     title: 'aquatrack',
     stacks:

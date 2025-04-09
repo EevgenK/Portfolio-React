@@ -93,6 +93,11 @@ export const en = {
         description:
           'Responsive website presenting the team, projects and services of the web studio. Available on a variety of devices for easy viewing.',
       },
+      rentalCar: {
+        title: 'rental car',
+        description:
+          'A modern, user-friendly front-end desktop demo application that allows users to browse, filter, and book cars available for rent from the RentalCar company.',
+      },
     },
     contacts: {
       title: 'my contacts',
