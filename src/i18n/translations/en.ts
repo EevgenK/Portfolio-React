@@ -98,6 +98,11 @@ export const en = {
         description:
           'A modern, user-friendly front-end desktop demo application that allows users to browse, filter, and book cars available for rent from the RentalCar company.',
       },
+      HappyTailsGrooming: {
+        title: 'Happy-Tails Grooming',
+        description:
+          'This is a landing page for the Happy Tails Grooming salon in Dnipro, which specialises in professional grooming courses for dogs and cats. The site supports responsive design for easy viewing on different devices.',
+      },
     },
     contacts: {
       title: 'my contacts',

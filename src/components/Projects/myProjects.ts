@@ -9,16 +9,6 @@ export interface myProject {
 }
 export const myProjects: myProject[] = [
   {
-    id: 11,
-    title: 'rentalCar',
-    stacks:
-      'Html, СSS Modules, JS, Redux Toolkit, React, Axios, React Router, Formik, Yup',
-    deploy_link: 'https://rental-car-brown.vercel.app/',
-    git_link: 'https://github.com/EevgenK/rental-car',
-    image_src: '/img/pj-11-min.webp',
-    image_srcset: '/img/pj-11@2x-min.webp',
-  },
-  {
     id: 9,
     title: 'aquatrack',
     stacks:
@@ -28,6 +18,17 @@ export const myProjects: myProject[] = [
     image_src: '/img/pj-9-min.webp',
     image_srcset: '/img/pj-9@2x-min.webp',
   },
+  {
+    id: 11,
+    title: 'rentalCar',
+    stacks:
+      'Html, СSS Modules, JS, Redux Toolkit, React, Axios, React Router, Formik, Yup',
+    deploy_link: 'https://rental-car-brown.vercel.app/',
+    git_link: 'https://github.com/EevgenK/rental-car',
+    image_src: '/img/pj-11-min.webp',
+    image_srcset: '/img/pj-11@2x-min.webp',
+  },
+
   {
     id: 8,
     title: 'aquatrackDataBase',
@@ -117,4 +118,25 @@ export const myProjects: myProject[] = [
     image_src: '/img/pj-1-min.webp',
     image_srcset: '/img/pj-1@2x-min.webp',
   },
+  {
+    id: 12,
+    title: 'HappyTailsGrooming',
+    stacks: 'Next.js, CSS Modules, Framer Motion, TypeScript',
+    deploy_link: 'https://www.happytails-grooming.dp.ua/',
+    git_link: 'https://github.com/EevgenK/happy-tails',
+
+    image_src: '/img/pj-12-min.webp',
+    image_srcset: '/img/pj-12@2x-min.webp',
+  },
+  // {
+  //   id: 13,
+  //   title: 'Learn-lingo',
+  //   stacks:
+  //     'React, Redux/Toolkit, Firebase, React Hook Form + Yup, Vite, TypeScript, React Router ,CSS Modules',
+  //   deploy_link: 'https://learn-lingo-inky.vercel.app/',
+  //   git_link: 'https://github.com/EevgenK/LearnLingo',
+
+  //   image_src: '',
+  //   image_srcset: '',
+  // },
 ];
