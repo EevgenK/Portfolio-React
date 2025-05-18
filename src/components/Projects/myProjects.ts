@@ -12,11 +12,22 @@ export const myProjects: myProject[] = [
     id: 9,
     title: 'aquatrack',
     stacks:
-      'Html, СSS, JavaScript, Redux, JSON Web Token (JWT), i18next, React Tour, Axios, Rest Api.',
+      'Html, СSS, JavaScript, Redux, JSON Web Token (JWT), i18next, React Tour, Axios, Rest Api',
     deploy_link: 'https://final-project-frontend-taupe.vercel.app/',
     git_link: 'https://github.com/anastasiiayerashova/final-project-frontend',
     image_src: '/img/pj-9-min.webp',
     image_srcset: '/img/pj-9@2x-min.webp',
+  },
+  {
+    id: 13,
+    title: 'learnLingo',
+    stacks:
+      'React, Redux/Toolkit, Firebase, React Hook Form + Yup, Vite, TypeScript, React Router ,CSS Modules',
+    deploy_link: 'https://learn-lingo-inky.vercel.app/',
+    git_link: 'https://github.com/EevgenK/LearnLingo',
+
+    image_src: '/img/pj-13-min.webp',
+    image_srcset: '/img/pj-13@2x-min.webp',
   },
   {
     id: 11,
@@ -128,15 +139,4 @@ export const myProjects: myProject[] = [
     image_src: '/img/pj-12-min.webp',
     image_srcset: '/img/pj-12@2x-min.webp',
   },
-  // {
-  //   id: 13,
-  //   title: 'Learn-lingo',
-  //   stacks:
-  //     'React, Redux/Toolkit, Firebase, React Hook Form + Yup, Vite, TypeScript, React Router ,CSS Modules',
-  //   deploy_link: 'https://learn-lingo-inky.vercel.app/',
-  //   git_link: 'https://github.com/EevgenK/LearnLingo',
-
-  //   image_src: '',
-  //   image_srcset: '',
-  // },
 ];

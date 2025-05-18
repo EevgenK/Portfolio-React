@@ -103,6 +103,11 @@ export const en = {
         description:
           'This is a landing page for the Happy Tails Grooming salon in Dnipro, which specialises in professional grooming courses for dogs and cats. The site supports responsive design for easy viewing on different devices.',
       },
+      learnLingo: {
+        title: 'Learn-lingo',
+        description:
+          'This is a responsive React application designed to help users find language tutors for learning foreign languages. It provides authorisation and offers a wide range of features, including tutor filtering, customisation, and booking trial lessons.',
+      },
     },
     contacts: {
       title: 'my contacts',
